@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Estudio de Desarrollo Web Accesible</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header role="banner">
+    <div class="container">
+      <h1>Pixel &amp; Código</h1>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto">Solicita una asesoría</h2>
+      <p>Completa el formulario y te responderemos en menos de 24 horas hábiles.</p>
+
+      <img 
+        class="featured-img"
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" 
+        alt="Especialista brindando soporte técnico desde una computadora portátil" 
+        width="800" 
+        height="400">
+
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="nombre-completo">Nombre completo (obligatorio):</label>
+          <input 
+            type="text" 
+            id="nombre-completo" 
+            name="nombre" 
+            required 
+            autocomplete="name">
+        </div>
+
+        <div class="form-group">
+          <label for="correo-electronico">Correo electrónico (obligatorio):</label>
+          <input 
+            type="email" 
+            id="correo-electronico" 
+            name="correo" 
+            required 
+            autocomplete="email">
+        </div>
+
+        <div class="form-group">
+          <label for="asunto-proyecto">Tipo de proyecto:</label>
+          <select id="asunto-proyecto" name="asunto">
+            <option value="desarrollo">Desarrollo Web desde cero</option>
+            <option value="auditoria">Auditoría de Accesibilidad</option>
+            <option value="otro">Otro</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje-usuario">Detalles de tu consulta (obligatorio):</label>
+          <textarea 
+            id="mensaje-usuario" 
+            name="mensaje" 
+            rows="5" 
+            required></textarea>
+        </div>
+
+        <button type="submit" aria-label="Enviar formulario de solicitud de asesoría">
+          Enviar mensaje
+        </button>
+      </form>
+    </section>
+
+    <aside role="region" aria-label="Información de horario de atención" class="status-box">
+      <h3>Horario de atención directa</h3>
+      <p>Lunes a viernes de 09:00 a 18:00 hrs (Tiempo del Centro).</p>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pixel &amp; Código. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

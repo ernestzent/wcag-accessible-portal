@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio | Estudio de Desarrollo Web Accesible</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header role="banner">
+    <div class="container">
+      <h1>Pixel &amp; Código</h1>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="index.html" aria-current="page">Inicio</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section aria-labelledby="titulo-filosofia">
+      <h2 id="titulo-filosofia">Nuestra Filosofía</h2>
+      <p>
+        Diseñamos productos digitales guiados por el principio de 
+        <span lang="en">"Accessibility First and Inclusive Design"</span>, 
+        garantizando que cualquier persona pueda navegar sin barreras.
+      </p>
+    </section>
+
+    <section aria-labelledby="titulo-servicios">
+      <h2 id="titulo-servicios">Servicios Destacados</h2>
+      
+      <div class="grid">
+        <article class="card">
+          <img 
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=600&q=80" 
+            alt="Portátil mostrando líneas de código en un escritorio minimalista" 
+            width="600" 
+            height="400">
+          <h3>Arquitectura Front-End</h3>
+          <p>Interfaces rápidas, semánticas y optimizadas para lectores de pantalla y navegación por teclado.</p>
+        </article>
+
+        <article class="card">
+          <img 
+            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" 
+            alt="Monitor con gráficos estadísticos y métricas de auditoría web" 
+            width="600" 
+            height="400">
+          <h3>Auditoría WCAG</h3>
+          <p>Evaluación heurística y técnica para asegurar el cumplimiento de contrastes, roles y etiquetas.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Pixel &amp; Código. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+    
+</body>
+</html>
